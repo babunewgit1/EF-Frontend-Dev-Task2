@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- header area start -->
+      <header>
+        <div class="headerWrapper">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./src/assets/images/m.svg" alt="m sign" />
+              <span>My Cloud</span>
+            </a>
+          </div>
+          <div class="searchBox">
+            <div class="searchInput">
+              <input type="text" placeholder="Search Files..." />
+            </div>
+            <div class="filter">
+              <select>
+                <option selected>Filter</option>
+                <option value="One">One</option>
+                <option value="One">One</option>
+                <option value="One">One</option>
+                <option value="One">One</option>
+              </select>
+            </div>
+          </div>
+          <div class="notification">
+            <div class="bell">
+              <button id="notibutton">
+                <img src="./src/assets/images/bell.svg" alt="bell" />
+                <span></span>
+              </button>
+              <div class="notificationdrop">
+                <div class="notiheading">
+                  <h5>Notifications</h5>
+                </div>
+                <div class="notili">
+                  <div class="notifill-item">
+                    <a href="#">
+                      <div class="notiOne">
+                        <div class="notiOneTop">
+                          <div class="notiOnetopLeft">
+                            <img src="./src/assets/images/oval.svg" alt="" />
+                            <p>
+                              3 new customer account is created, please check
+                            </p>
+                          </div>
+                          <div class="notionearrow">
+                            <img src="./src/assets/images/arrow1.svg" alt="" />
+                          </div>
+                        </div>
+                        <p id="min">2 minutes ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notifill-item">
+                    <a href="#">
+                      <div class="notiOne">
+                        <div class="notiOneTop">
+                          <div class="notiOnetopLeft">
+                            <img src="./src/assets/images/oval.svg" alt="" />
+                            <p>
+                              3 new customer account is created, please check
+                            </p>
+                          </div>
+                          <div class="notionearrow">
+                            <img src="./src/assets/images/arrow1.svg" alt="" />
+                          </div>
+                        </div>
+                        <p id="min">2 minutes ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notifill-item">
+                    <a href="#">
+                      <div class="notiOne">
+                        <div class="notiOneTop">
+                          <div class="notiOnetopLeft">
+                            <img src="./src/assets/images/oval.svg" alt="" />
+                            <p>
+                              3 new customer account is created, please check
+                            </p>
+                          </div>
+                          <div class="notionearrow">
+                            <img src="./src/assets/images/arrow1.svg" alt="" />
+                          </div>
+                        </div>
+                        <p id="min">2 minutes ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notifill-item">
+                    <a href="#">
+                      <div class="notiOne">
+                        <div class="notiOneTop">
+                          <div class="notiOnetopLeft">
+                            <img src="./src/assets/images/oval.svg" alt="" />
+                            <p>
+                              3 new customer account is created, please check
+                            </p>
+                          </div>
+                          <div class="notionearrow">
+                            <img src="./src/assets/images/arrow1.svg" alt="" />
+                          </div>
+                        </div>
+                        <p id="min">2 minutes ago</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="notifill-item">
+                    <a href="#">
+                      <div class="notiOne">
+                        <div class="notiOneTop">
+                          <div class="notiOnetopLeft">
+                            <img src="./src/assets/images/oval.svg" alt="" />
+                            <p>
+                              3 new customer account is created, please check
+                            </p>
+                          </div>
+                          <div class="notionearrow">
+                            <img src="./src/assets/images/arrow1.svg" alt="" />
+                          </div>
+                        </div>
+                        <p id="min">2 minutes ago</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profilePic">
+              <button id="prifileButton">
+                <img src="./src/assets/images/pp.png" alt="" />
+              </button>
+              <div class="profileDetails">
+                <h5>hrk</h5>
+                <p>hrk041999@gmail.com</p>
+              </div>
+              <div class="profilesubMenu">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./src/assets/images/pp1.svg"
+                        alt="profile link icon"
+                      />My Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./src/assets/images/pp3.svg"
+                        alt="profile link icon"
+                      />Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./src/assets/images/pp2.svg"
+                        alt="profile link icon"
+                      />Activity</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./src/assets/images/pp4.svg"
+                        alt="profile link icon"
+                      />Log out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header area end -->
+
+      <!-- main area start -->
+      <main>
+        <div class="mainWrapper">
+          <!-- main-left area start -->
+          <div class="main-left">
+            <div class="main-left-top">
+              <div class="mainleftItem active">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon1.svg" alt="" />
+                  </div>
+                  <p>Dashboard</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon2.svg" alt="" />
+                  </div>
+                  <p>All Files</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon3.svg" alt="" />
+                  </div>
+                  <p>Shared</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon4.svg" alt="" />
+                  </div>
+                  <p>Favorites</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon5.svg" alt="" />
+                  </div>
+                  <p>Recent</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon6.svg" alt="" />
+                  </div>
+                  <p>Request</p>
+                </a>
+              </div>
+            </div>
+            <div class="main-left-bottom main-left-top">
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon7.svg" alt="" />
+                  </div>
+                  <p>Pictures</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon8.svg" alt="" />
+                  </div>
+                  <p>Videos</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon9.svg" alt="" />
+                  </div>
+                  <p>Documents</p>
+                </a>
+              </div>
+              <div class="mainleftItem">
+                <a href="#">
+                  <div class="itemIcon">
+                    <img src="./src/assets/images/icon10.svg" alt="" />
+                  </div>
+                  <p>Signed</p>
+                </a>
+              </div>
+            </div>
+            <div class="used">
+              <h3>25.32 GB <span>used</span></h3>
+              <p>79% used - 6.64 GB free</p>
+              <div class="usedbar">
+                <span></span>
+              </div>
+            </div>
+            <div class="addMore">
+              <a href="#">Add More Space</a>
+            </div>
+          </div>
+          <!-- main-left area end -->
+
+          <!-- mainMiddle area start -->
+          <div class="mainMiddile">
+            <div class="middileSlider">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file1.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Design</h4>
+                          <div class="space">
+                            <p>17 files</p>
+                            <p>12 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideTwo">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file2.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Documents</h4>
+                          <div class="space">
+                            <p>17 files</p>
+                            <p>12 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideThree">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file3.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Music</h4>
+                          <div class="space">
+                            <p>1,200 files</p>
+                            <p>24 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideFour">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file4.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Images</h4>
+                          <div class="space">
+                            <p>270 files</p>
+                            <p>24 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file1.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Design</h4>
+                          <div class="space">
+                            <p>17 files</p>
+                            <p>12 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideTwo">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file2.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Documents</h4>
+                          <div class="space">
+                            <p>17 files</p>
+                            <p>12 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideThree">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file3.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Music</h4>
+                          <div class="space">
+                            <p>1,200 files</p>
+                            <p>24 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slideOneWrapper">
+                      <div class="slideOne slideFour">
+                        <div class="fileIcon">
+                          <img
+                            id="ficon"
+                            src="./src/assets/images/file4.svg"
+                            alt="file icon"
+                          />
+                          <button class="toggleButton">
+                            <img
+                              src="./src/assets/images/drop.svg"
+                              alt="drop icon"
+                            />
+                          </button>
+                          <div class="dropdown">
+                            <ul>
+                              <li><a href="#">Item A</a></li>
+                              <li><a href="#">Item B</a></li>
+                              <li><a href="#">Item C</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="fileCnt">
+                          <h4>Images</h4>
+                          <div class="space">
+                            <p>270 files</p>
+                            <p>24 GB</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="access">
+              <div class="accessheading">
+                <h3>Quick Access</h3>
+              </div>
+              <div class="accessBlock">
+                <div class="accessblockOne">
+                  <img
+                    class="thumbnail"
+                    src="./src/assets/images/access1.png"
+                    alt="Building Image.jpeg"
+                  />
+                  <div class="imgCaption">
+                    <img src="./src/assets/images/ai1.svg" alt="access icon" />
+                    <p>Building Image.<span>jpeg</span></p>
+                  </div>
+                </div>
+                <div class="accessblockOne">
+                  <img
+                    class="thumbnail"
+                    src="./src/assets/images/access2.png"
+                    alt="Building Image.jpeg"
+                  />
+                  <div class="imgCaption">
+                    <img src="./src/assets/images/ai2.svg" alt="access icon" />
+                    <p>Product Video.<span>mp4</span></p>
+                  </div>
+                </div>
+                <div class="accessblockOne">
+                  <img
+                    class="thumbnail"
+                    src="./src/assets/images/access3.png"
+                    alt="Building Image.jpeg"
+                  />
+                  <div class="imgCaption">
+                    <img src="./src/assets/images/ai3.svg" alt="access icon" />
+                    <p>Customers.<span>pdf</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="upload">
+              <div class="uploadLeft">
+                <div class="accessheading">
+                  <h3>Recently Uploaded</h3>
+                </div>
+                <div class="uploadleftWrapper">
+                  <div class="uploadblock">
+                    <div class="uploadLeftOne">
+                      <div class="uploadOneLeft">
+                        <div class="uploadOneimg">
+                          <img src="./src/assets/images/up1.svg" alt="icon" />
+                        </div>
+                        <div class="uploadOnepara">
+                          <p>Marcus Family.jpg</p>
+                          <span>10 oct, 10:23pm</span>
+                        </div>
+                      </div>
+                      <div class="uploadOneRight">
+                        <p>12 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uploadblock">
+                    <div class="uploadLeftOne">
+                      <div class="uploadOneLeft">
+                        <div class="uploadOneimg">
+                          <img src="./src/assets/images/up2.svg" alt="icon" />
+                        </div>
+                        <div class="uploadOnepara">
+                          <p>Marcus Family.jpg</p>
+                          <span>10 oct, 10:23pm</span>
+                        </div>
+                      </div>
+                      <div class="uploadOneRight">
+                        <p>12 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uploadblock">
+                    <div class="uploadLeftOne">
+                      <div class="uploadOneLeft">
+                        <div class="uploadOneimg">
+                          <img src="./src/assets/images/up3.svg" alt="icon" />
+                        </div>
+                        <div class="uploadOnepara">
+                          <p>Marcus Family.jpg</p>
+                          <span>10 oct, 10:23pm</span>
+                        </div>
+                      </div>
+                      <div class="uploadOneRight">
+                        <p>12 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uploadblock">
+                    <div class="uploadLeftOne">
+                      <div class="uploadOneLeft">
+                        <div class="uploadOneimg">
+                          <img src="./src/assets/images/up4.svg" alt="icon" />
+                        </div>
+                        <div class="uploadOnepara">
+                          <p>Marcus Family.jpg</p>
+                          <span>10 oct, 10:23pm</span>
+                        </div>
+                      </div>
+                      <div class="uploadOneRight">
+                        <p>12 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uploadblock">
+                    <div class="uploadLeftOne">
+                      <div class="uploadOneLeft">
+                        <div class="uploadOneimg">
+                          <img src="./src/assets/images/up5.svg" alt="icon" />
+                        </div>
+                        <div class="uploadOnepara">
+                          <p>Marcus Family.jpg</p>
+                          <span>10 oct, 10:23pm</span>
+                        </div>
+                      </div>
+                      <div class="uploadOneRight">
+                        <p>12 MB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uploadRight">
+                <div class="accessheading fileheading">
+                  <h3>File Manager</h3>
+                  <button id="droptigger">
+                    <img src="./src/assets/images/more.svg" alt="more" />
+                  </button>
+
+                  <div class="fileDrop">
+                    <ul>
+                      <li><a href="#">Item 1</a></li>
+                      <li><a href="#">Item 2</a></li>
+                      <li><a href="#">Item 3</a></li>
+                      <li><a href="#">Item 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="uploadBlock">
+                  <div class="uploadOne">
+                    <img src="./src/assets/images/smfile.svg" alt="file icon" />
+                    <div class="uploadOnecnt">
+                      <h4>My Folder</h4>
+                      <p>created Jun 23, 2020</p>
+                    </div>
+                  </div>
+                  <div class="uploadOne">
+                    <img src="./src/assets/images/smpdf.svg" alt="file icon" />
+                    <div class="uploadOnecnt">
+                      <h4>Aggreement.pdf</h4>
+                      <p>created Jun 23, 2020</p>
+                    </div>
+                  </div>
+                  <div class="uploadOne">
+                    <img src="./src/assets/images/smfile.svg" alt="file icon" />
+                    <div class="uploadOnecnt">
+                      <h4>Other Folder</h4>
+                      <p>created Jun 23, 2020</p>
+                    </div>
+                  </div>
+                  <div class="uploadOne">
+                    <img src="./src/assets/images/smpdf.svg" alt="file icon" />
+                    <div class="uploadOnecnt">
+                      <h4>Blueprints</h4>
+                      <p>created Jun 23, 2020</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uploadButton">
+                  <a href="#">Open File Manager</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mainMiddle area end -->
+
+          <!-- mainLeft area start -->
+          <div class="mainRight">
+            <div class="chartState">
+              <div class="chartStateheading">
+                <h3>Usage Stats</h3>
+              </div>
+              <div class="chartWrapper">
+                <canvas id="myChart"></canvas>
+              </div>
+
+              <div class="upload newfile">
+                <div class="uploadLeft">
+                  <div class="accessheading">
+                    <h3>Shared Folders</h3>
+                  </div>
+                  <div class="uploadleftWrapper">
+                    <div class="uploadblock">
+                      <div class="uploadLeftOne">
+                        <div class="uploadOneLeft">
+                          <div class="uploadOneimg">
+                            <img
+                              src="./src/assets/images/sharefolder.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="uploadOnepara">
+                            <p>Sketch Files</p>
+                            <span>Shared with: mike@getnextdesign.com</span>
+                          </div>
+                        </div>
+                        <div class="uploadOneRight">
+                          <p>10 oct, 10:23pm</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uploadblock">
+                      <div class="uploadLeftOne">
+                        <div class="uploadOneLeft">
+                          <div class="uploadOneimg">
+                            <img
+                              src="./src/assets/images/sharefolder.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="uploadOnepara">
+                            <p>AutoCad Drawings</p>
+                            <span>Shared with: shakir@gmail.com</span>
+                          </div>
+                        </div>
+                        <div class="uploadOneRight">
+                          <p>12 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uploadblock">
+                      <div class="uploadLeftOne">
+                        <div class="uploadOneLeft">
+                          <div class="uploadOneimg">
+                            <img
+                              src="./src/assets/images/sharefolder.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="uploadOnepara">
+                            <p>Master Speardsheets</p>
+                            <span>Shared with: john@google.com</span>
+                          </div>
+                        </div>
+                        <div class="uploadOneRight">
+                          <p>12 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uploadblock">
+                      <div class="uploadLeftOne">
+                        <div class="uploadOneLeft">
+                          <div class="uploadOneimg">
+                            <img
+                              src="./src/assets/images/sharefolder.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="uploadOnepara">
+                            <p>Design Comps</p>
+                            <span>Shared with: kelvin@hunter.com</span>
+                          </div>
+                        </div>
+                        <div class="uploadOneRight">
+                          <p>12 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uploadblock">
+                      <div class="uploadLeftOne">
+                        <div class="uploadOneLeft">
+                          <div class="uploadOneimg">
+                            <img
+                              src="./src/assets/images/sharefolder.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <div class="uploadOnepara">
+                            <p>Final Revisions</p>
+                            <span>Shared with: saim@purepixel.com</span>
+                          </div>
+                        </div>
+                        <div class="uploadOneRight">
+                          <p>12 MB</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ad">
+                <div class="addWrapper">
+                  <div class="flower">
+                    <img src="./src/assets/images/flower.png" alt="" />
+                    <div class="flower_content">
+                      <p>
+                        Invite 2 friends and get <br />
+                        5 GB extra space.
+                      </p>
+                      <a href="#">Invite Now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mainLeft area end -->
+        </div>
+      </main>
+      <!-- main area end -->
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
