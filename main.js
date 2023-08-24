@@ -2,12 +2,11 @@
 import "./src/assets/css/style.scss";
 import "./src/assets/css/utility.scss";
 import "./src/assets/css/font.scss";
+import "./src/assets/css/responsive.scss";
 
 //import swipper js file.
 import Swiper from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 //import chart.js file.
 import Chart from "chart.js/auto";

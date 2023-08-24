@@ -1,0 +1,77 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 70%;
+  }
+
+  .headerWrapper {
+    padding: 0rem 1.5rem;
+  }
+
+  .searchBox {
+    display: none;
+  }
+
+  .profileDetails {
+    display: none;
+  }
+
+  .headerWrapper .logo a span {
+    font-size: 1.4rem;
+    margin-left: 0.1rem;
+  }
+
+  .notification {
+    gap: 1.2rem;
+  }
+
+  .notification .profilePic img {
+    width: 2.85rem;
+  }
+
+  .notification button img {
+    display: inline-block;
+    width: 1.5rem;
+  }
+
+  #searchmb img {
+    position: relative;
+    top: -2px;
+  }
+
+  .searchicon {
+    display: block !important;
+  }
+
+  .hamburgur button img {
+    display: inline-block !important;
+  }
+}

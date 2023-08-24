@@ -101,6 +101,10 @@ header {
   align-items: center;
   gap: 4rem;
 
+  .searchicon {
+    display: none;
+  }
+
   .bell {
     position: relative;
 
@@ -184,7 +188,7 @@ header {
       }
 
       p {
-        font-size: 14px;
+        font-size: 1.4rem;
         color: #000;
       }
     }
@@ -977,7 +981,7 @@ main {
         display: inline-block;
         color: $primaryColor;
         font-family: Sofia Pro;
-        font-size: 14px;
+        font-size: 1.4rem;
         padding: 1rem 1.6rem;
         background-color: #84e8f4;
         border-radius: 0.5rem;
@@ -1002,6 +1006,12 @@ main {
   transform: scaleY(1) !important;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+.hamburgur button img {
+  display: none !important;
+  width: 2.5rem !important;
+  opacity: 0.7;
 }
 
 // -- mainLeft area end --
