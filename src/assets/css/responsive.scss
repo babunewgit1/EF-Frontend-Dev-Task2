@@ -74,4 +74,181 @@ Xtra Small Screen - Small Mobile
   .hamburgur button img {
     display: inline-block !important;
   }
+
+  .notification .bell .notificationdrop {
+    width: 25rem;
+    right: -7rem;
+  }
+
+  .notification .bell .notificationdrop::after {
+    right: 6.9rem;
+  }
+
+  .notification .bell .notiOneTop {
+    gap: 10px;
+  }
+
+  .notification .profilePic .profilesubMenu {
+    top: 3.8rem;
+    right: -1.6rem;
+    left: inherit;
+  }
+
+  .notification .profilePic .profilesubMenu::after {
+    right: 1.9rem;
+    left: inherit;
+  }
+
+  .sticky-header .notification .profilePic .profilesubMenu {
+    left: inherit;
+    top: 3.4rem;
+  }
+
+  .notification .bell .notificationdrop {
+    top: 3.1rem;
+  }
+
+  .main-left {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 999999;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2.3rem 1.2rem;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    scrollbar-width: thin;
+  }
+
+  .main-left::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .main-left::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .main-left::-webkit-scrollbar-thumb {
+    background: #a5b6c5;
+    border-radius: 5px;
+  }
+
+  .menuOpen {
+    left: 0%;
+  }
+
+  .main-left-bottom {
+    margin-top: 4.2rem;
+  }
+
+  .used {
+    margin-top: 4.5rem;
+    padding: 0rem 2rem;
+  }
+
+  .addMore a {
+    margin-top: 4.5rem;
+  }
+
+  .addMore {
+    padding: 0rem 1.6rem;
+  }
+
+  .leftheading {
+    display: block;
+  }
+
+  .mainWrapper {
+    display: block;
+  }
+
+  .middileSlider {
+    width: 160%;
+  }
+  .mainMiddile {
+    width: 100%;
+  }
+
+  .slideOneWrapper {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .slideOne {
+    width: 100%;
+  }
+
+  .access .accessBlock {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .access {
+    padding: 0rem 1.2rem;
+  }
+
+  .upload {
+    margin-top: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem 1.2rem;
+  }
+
+  .uploadRight {
+    padding-left: 0rem;
+  }
+
+  .uploadRight {
+    margin-top: 3.5rem;
+  }
+
+  .uploadBlock .uploadOne {
+    margin-top: 1rem;
+  }
+
+  .uploadBlock {
+    grid-gap: 0rem 1rem;
+  }
+
+  .mainRight {
+    width: 100%;
+    padding: 0rem 1.2rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  .chartState {
+    margin-top: 0rem;
+  }
+
+  .chartStateheading h3 {
+    margin-bottom: 1.2rem;
+  }
+
+  #myChart {
+    width: 100% !important;
+    height: inherit !important;
+  }
+
+  .newfile {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .ad .flower {
+    left: 0;
+  }
+
+  .ad .flower::after {
+    width: 98%;
+    left: 1rem;
+  }
+
+  .ad .flower img {
+    height: 13rem;
+    object-fit: cover;
+  }
 }

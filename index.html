@@ -9,7 +9,7 @@
   <body>
     <div id="app">
       <!-- header area start -->
-      <header>
+      <header id="header">
         <div class="headerWrapper">
           <div class="logo">
             <a href="index.html">
@@ -195,6 +195,16 @@
               </button>
             </div>
           </div>
+          <div class="searchInputBox">
+            <div class="inputbox">
+              <input type="text" placeholder="Search here" />
+            </div>
+            <div class="cross">
+              <button>
+                <img src="./src/assets/images/cross.svg" alt="cross icon" />
+              </button>
+            </div>
+          </div>
         </div>
       </header>
       <!-- header area end -->
@@ -204,6 +214,16 @@
         <div class="mainWrapper">
           <!-- main-left area start -->
           <div class="main-left">
+            <div class="leftheading">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./src/assets/images/ms.svg" alt="logo images" />
+                </a>
+                <button id="close">
+                  <img src="./src/assets/images/cross.svg" alt="close images" />
+                </button>
+              </div>
+            </div>
             <div class="main-left-top">
               <div class="mainleftItem active">
                 <a href="#">
@@ -605,38 +625,59 @@
                 <h3>Quick Access</h3>
               </div>
               <div class="accessBlock">
-                <div class="accessblockOne">
-                  <img
-                    class="thumbnail"
-                    src="./src/assets/images/access1.png"
-                    alt="Building Image.jpeg"
-                  />
-                  <div class="imgCaption">
-                    <img src="./src/assets/images/ai1.svg" alt="access icon" />
-                    <p>Building Image.<span>jpeg</span></p>
-                  </div>
+                <div class="quickaccessLink">
+                  <a href="#">
+                    <div class="accessblockOne">
+                      <img
+                        class="thumbnail"
+                        src="./src/assets/images/access1.png"
+                        alt="Building Image.jpeg"
+                      />
+                      <div class="imgCaption">
+                        <img
+                          src="./src/assets/images/ai1.svg"
+                          alt="access icon"
+                        />
+                        <p>Building Image.<span>jpeg</span></p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="accessblockOne">
-                  <img
-                    class="thumbnail"
-                    src="./src/assets/images/access2.png"
-                    alt="Building Image.jpeg"
-                  />
-                  <div class="imgCaption">
-                    <img src="./src/assets/images/ai2.svg" alt="access icon" />
-                    <p>Product Video.<span>mp4</span></p>
-                  </div>
+                <div class="quickaccessLink">
+                  <a href="#">
+                    <div class="accessblockOne">
+                      <img
+                        class="thumbnail"
+                        src="./src/assets/images/access2.png"
+                        alt="Building Image.jpeg"
+                      />
+                      <div class="imgCaption">
+                        <img
+                          src="./src/assets/images/ai2.svg"
+                          alt="access icon"
+                        />
+                        <p>Product Video.<span>mp4</span></p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="accessblockOne">
-                  <img
-                    class="thumbnail"
-                    src="./src/assets/images/access3.png"
-                    alt="Building Image.jpeg"
-                  />
-                  <div class="imgCaption">
-                    <img src="./src/assets/images/ai3.svg" alt="access icon" />
-                    <p>Customers.<span>pdf</span></p>
-                  </div>
+                <div class="quickacessLink">
+                  <a href="#">
+                    <div class="accessblockOne">
+                      <img
+                        class="thumbnail"
+                        src="./src/assets/images/access3.png"
+                        alt="Building Image.jpeg"
+                      />
+                      <div class="imgCaption">
+                        <img
+                          src="./src/assets/images/ai3.svg"
+                          alt="access icon"
+                        />
+                        <p>Customers.<span>pdf</span></p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

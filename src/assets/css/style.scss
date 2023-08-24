@@ -7,7 +7,11 @@ $smtextLg: 1.3rem;
 
 // -- header area start --
 header {
-  padding: 1.2rem 0rem;
+  padding: 1.8rem 0rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
 }
 
 .headerWrapper {
@@ -16,11 +20,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   .logo a {
     img {
       display: inline-block;
       width: 3rem;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
     }
 
     span {
@@ -30,6 +38,9 @@ header {
       font-size: 1.9rem;
       font-weight: 700;
       margin-left: 1.9rem;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
     }
   }
 }
@@ -45,6 +56,9 @@ header {
     border-radius: 1rem;
     padding: 0.5rem;
     padding-left: 2rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 
     input {
       display: block;
@@ -59,6 +73,9 @@ header {
       background-size: 2.1rem 2.1rem;
       background-position: left 0rem top 0.65rem;
       padding: 1rem 1rem 1rem 3.5rem;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
 
       &::placeholder {
         opacity: 1;
@@ -76,6 +93,9 @@ header {
     padding: 0.7rem 1.5rem;
     padding-left: 0.5rem;
     background-size: 1rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 
     select {
       border: 0;
@@ -92,6 +112,9 @@ header {
       padding: 1rem 0rem;
       padding-left: 1rem;
       background-color: transparent;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
     }
   }
 }
@@ -185,6 +208,9 @@ header {
         display: inline-block;
         width: 2.5rem;
         opacity: 0.6;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
       }
 
       p {
@@ -198,6 +224,9 @@ header {
         display: inline-block;
         width: 1.8rem;
         opacity: 0.6;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
       }
     }
   }
@@ -208,10 +237,16 @@ header {
     outline: none;
     background-color: transparent;
     position: relative;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
 
     img {
       display: inline-block;
       width: 2rem;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
     }
 
     span {
@@ -289,6 +324,9 @@ header {
     img {
       display: inline-block;
       width: 4.6rem;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
     }
 
     .profileDetails {
@@ -673,11 +711,20 @@ main {
     .accessblockOne {
       margin-top: 1.9rem;
       position: relative;
+      overflow: hidden;
+      border-radius: 1.6rem;
 
       img.thumbnail {
         display: block;
         width: 100%;
         border-radius: 1.6rem;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+      }
+
+      &:hover img.thumbnail {
+        transform: scale(1.4);
       }
 
       .imgCaption {
@@ -1012,6 +1059,162 @@ main {
   display: none !important;
   width: 2.5rem !important;
   opacity: 0.7;
+}
+
+.searchInputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0px 0px 1.3rem 1rem rgba(0, 0, 0, 0.06);
+  border-radius: 5rem;
+  position: absolute;
+  width: 92%;
+  left: 1.2rem;
+  top: 2.5rem;
+  padding: 0.5rem 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+}
+
+.searchInputBox {
+  .inputbox {
+    width: 100%;
+    padding-right: 1rem;
+  }
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 0.8rem 0rem;
+  padding-left: 2rem;
+  background-image: url(/src/assets/images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position: top 9px left 0px;
+}
+
+.cross button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cross button img {
+  display: inline-block;
+  width: 2.4rem;
+}
+
+.showSearch {
+  opacity: 1;
+  visibility: visible;
+  top: -2px;
+}
+
+.notili {
+  height: 35rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.notili::-webkit-scrollbar {
+  width: 7px;
+}
+
+.notili::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.notili::-webkit-scrollbar-thumb {
+  background: #a5b6c5;
+  border-radius: 5px;
+}
+
+.sticky-header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  padding: 1.4rem 0rem;
+  box-shadow: 0px 1px 1.3rem 0.5rem rgba(0, 0, 0, 0.06);
+
+  .logo a {
+    img {
+      width: 2.5rem;
+    }
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  .searchInput input {
+    font-size: 1.2rem;
+    background-size: 1.6rem 1.6rem;
+    background-position: left 0rem top 4px;
+    padding: 0.6rem 1rem 0.6rem 3.5rem;
+  }
+
+  .filter {
+    background-position: top 1.6rem right 1.5rem;
+
+    select {
+      font-size: 1.2rem;
+      padding: 0.5rem 0rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .notification button img {
+    width: 1.6rem;
+  }
+
+  .notification .profilePic img {
+    width: 2.6rem;
+  }
+
+  .notification .profilePic .profilesubMenu {
+    top: 4rem;
+    left: -15px;
+  }
+}
+
+.leftheading {
+  display: none;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+    a img {
+      display: inline-block;
+      width: 15rem;
+    }
+
+    button {
+      display: inline-block;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+
+      img {
+        display: inline-block;
+        width: 2.5rem;
+        filter: brightness(0) saturate(100%) invert(14%) sepia(58%)
+          saturate(4328%) hue-rotate(239deg) brightness(96%) contrast(88%);
+      }
+    }
+  }
 }
 
 // -- mainLeft area end --

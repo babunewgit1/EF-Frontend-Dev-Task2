@@ -17,19 +17,12 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   spaceBetween: 0,
   breakpoints: {
-    // When window width is >= 320px
     320: {
+      slidesPerView: 2,
+    },
+    576: {
       slidesPerView: 1,
     },
-    // When window width is >= 480px
-    480: {
-      slidesPerView: 1,
-    },
-    // When window width is >= 768px
-    768: {
-      slidesPerView: 1,
-    },
-    // When window width is >= 1024px
     1024: {
       slidesPerView: 4,
     },
@@ -140,4 +133,45 @@ document.addEventListener("DOMContentLoaded", function () {
       event.stopPropagation();
     });
   });
+});
+
+// search bar acitve for mobile
+const searchmb = document.getElementById("searchmb");
+const searchInputBox = document.querySelector(".searchInputBox");
+const cross = document.querySelector(".cross");
+
+searchmb.addEventListener("click", function () {
+  searchInputBox.classList.add("showSearch");
+});
+
+cross.addEventListener("click", function () {
+  searchInputBox.classList.remove("showSearch");
+});
+
+// sticky header code
+window.addEventListener("scroll", function () {
+  const header = document.getElementById("header");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 25) {
+    header.classList.add("sticky-header");
+  } else {
+    header.classList.remove("sticky-header");
+  }
+});
+
+// code for responsive menu
+const ham = document.getElementById("ham");
+const hamWrapper = document.querySelector(".main-left");
+const body = document.querySelector("body");
+const hamclose = document.getElementById("close");
+
+ham.addEventListener("click", () => {
+  hamWrapper.classList.add("menuOpen");
+  body.style.overflow = "hidden";
+});
+
+hamclose.addEventListener("click", () => {
+  hamWrapper.classList.remove("menuOpen");
+  body.style.overflow = "visible";
 });
