@@ -14,16 +14,22 @@ import Chart from "chart.js/auto";
 // code for swiper slider int
 const swiper = new Swiper(".swiper", {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 0,
   breakpoints: {
     320: {
       slidesPerView: 2,
     },
     576: {
-      slidesPerView: 1,
+      slidesPerView: 4,
     },
-    1024: {
+    768: {
+      slidesPerView: 4,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1181: {
       slidesPerView: 4,
     },
   },
@@ -168,10 +174,24 @@ const hamclose = document.getElementById("close");
 
 ham.addEventListener("click", () => {
   hamWrapper.classList.add("menuOpen");
-  body.style.overflow = "hidden";
+  body.classList.add("overflow");
 });
 
 hamclose.addEventListener("click", () => {
   hamWrapper.classList.remove("menuOpen");
-  body.style.overflow = "visible";
+  body.classList.remove("overflow");
 });
+
+// Add a click event listener to the body
+body.addEventListener("click", (event) => {
+  if (
+    !event.target.closest("#ham") &&
+    !event.target.closest(".main-left") &&
+    !event.target.closest("#close")
+  ) {
+    hamWrapper.classList.remove("menuOpen");
+    body.classList.remove("overflow");
+  }
+});
+
+// outsite click for responsive menu
