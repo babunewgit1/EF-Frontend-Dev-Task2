@@ -110,86 +110,35 @@ var myChart = new Chart(ctx, {
 });
 
 // code for dropdown opening
-const toggleButtons = document.querySelectorAll(".toggleButton");
-toggleButtons.forEach((toggleButton) => {
-  const fileIcon = toggleButton.closest(".fileIcon");
-  const dropdown = fileIcon.querySelector(".dropdown");
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".toggoler");
+  const target = document.querySelectorAll(".toggleable");
 
-  toggleButton.addEventListener("click", (event) => {
-    event.stopPropagation();
-    toggleDropdown(fileIcon, dropdown);
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      const targetDivId = button.getAttribute("data-target");
+
+      target.forEach(function (div) {
+        if (div.id === targetDivId) {
+          div.classList.toggle("show");
+        } else {
+          div.classList.remove("show");
+        }
+      });
+
+      event.stopPropagation();
+    });
   });
-});
 
-// Hide dropdowns when clicking outside of the buttons or dropdowns
-document.addEventListener("click", (event) => {
-  toggleButtons.forEach((toggleButton) => {
-    const fileIcon = toggleButton.closest(".fileIcon");
-    const dropdown = fileIcon.querySelector(".dropdown");
-    if (!fileIcon.contains(event.target)) {
-      dropdown.classList.remove("activeDrop");
-    }
+  document.addEventListener("click", function () {
+    target.forEach(function (div) {
+      div.classList.remove("show");
+    });
   });
-});
 
-function toggleDropdown(fileIcon, dropdown) {
-  toggleButtons.forEach((btn) => {
-    const otherFileIcon = btn.closest(".fileIcon");
-    const otherDropdown = otherFileIcon.querySelector(".dropdown");
-    if (otherFileIcon !== fileIcon) {
-      otherDropdown.classList.remove("activeDrop");
-    }
+  target.forEach(function (div) {
+    div.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
   });
-  dropdown.classList.toggle("activeDrop");
-}
-
-//code for File Manager dropdown
-const signleButton = document.getElementById("droptigger");
-const fileDrop = document.querySelector(".fileDrop");
-
-signleButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  fileDrop.classList.toggle("activeFileDrop");
-});
-
-document.addEventListener("click", (event) => {
-  if (!fileDrop.contains(event.target)) {
-    fileDrop.classList.remove("activeFileDrop");
-  }
-});
-
-//code for notification dropdown
-const notiButton = document.getElementById("notibutton");
-const notiPanel = document.querySelector(".notificationdrop");
-
-notiButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  notiPanel.classList.toggle("activenoti");
-});
-
-document.addEventListener("click", (event) => {
-  if (
-    !notiPanel.contains(event.target) &&
-    !profilesubMenu.contains(event.target)
-  ) {
-    notiPanel.classList.remove("activenoti");
-  }
-});
-
-//code for profile dropdown
-const prifileButton = document.getElementById("prifileButton");
-const profilesubMenu = document.querySelector(".profilesubMenu");
-
-prifileButton.addEventListener("click", (event) => {
-  event.stopPropagation();
-  profilesubMenu.classList.toggle("activeProfiledrop");
-});
-
-document.addEventListener("click", (event) => {
-  if (
-    !profilesubMenu.contains(event.target) &&
-    !notiPanel.contains(event.target)
-  ) {
-    profilesubMenu.classList.remove("activeProfiledrop");
-  }
 });

@@ -33,11 +33,11 @@
           </div>
           <div class="notification">
             <div class="bell">
-              <button id="notibutton">
+              <button class="toggoler" id="notibutton" data-target="bellnoti">
                 <img src="./src/assets/images/bell.svg" alt="bell" />
                 <span></span>
               </button>
-              <div class="notificationdrop">
+              <div class="notificationdrop toggleable" id="bellnoti">
                 <div class="notiheading">
                   <h5>Notifications</h5>
                 </div>
@@ -136,14 +136,18 @@
               </div>
             </div>
             <div class="profilePic">
-              <button id="prifileButton">
+              <button
+                class="toggoler"
+                id="prifileButton"
+                data-target="profileNoti"
+              >
                 <img src="./src/assets/images/pp.png" alt="" />
               </button>
               <div class="profileDetails">
                 <h5>hrk</h5>
                 <p>hrk041999@gmail.com</p>
               </div>
-              <div class="profilesubMenu">
+              <div class="profilesubMenu toggleable" id="profileNoti">
                 <ul>
                   <li>
                     <a href="#"
@@ -303,13 +307,16 @@
                             src="./src/assets/images/file1.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropOne"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropOne">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -336,13 +343,16 @@
                             src="./src/assets/images/file2.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropTwo"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropTwo">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -369,13 +379,16 @@
                             src="./src/assets/images/file3.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropthree"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropthree">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -402,13 +415,16 @@
                             src="./src/assets/images/file4.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropfour"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropfour">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -435,13 +451,16 @@
                             src="./src/assets/images/file1.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropfive"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropfive">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -468,13 +487,16 @@
                             src="./src/assets/images/file2.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropsix"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropsix">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -501,13 +523,16 @@
                             src="./src/assets/images/file3.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropseven"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropseven">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -534,13 +559,16 @@
                             src="./src/assets/images/file4.svg"
                             alt="file icon"
                           />
-                          <button class="toggleButton">
+                          <button
+                            class="toggleButton toggoler"
+                            data-target="dropeight"
+                          >
                             <img
                               src="./src/assets/images/drop.svg"
                               alt="drop icon"
                             />
                           </button>
-                          <div class="dropdown">
+                          <div class="dropdown toggleable" id="dropeight">
                             <ul>
                               <li><a href="#">Item A</a></li>
                               <li><a href="#">Item B</a></li>
@@ -694,11 +722,15 @@
               <div class="uploadRight">
                 <div class="accessheading fileheading">
                   <h3>File Manager</h3>
-                  <button id="droptigger">
+                  <button
+                    id="droptigger"
+                    class="toggoler"
+                    data-target="filedroptigger"
+                  >
                     <img src="./src/assets/images/more.svg" alt="more" />
                   </button>
 
-                  <div class="fileDrop">
+                  <div class="fileDrop toggleable" id="filedroptigger">
                     <ul>
                       <li><a href="#">Item 1</a></li>
                       <li><a href="#">Item 2</a></li>

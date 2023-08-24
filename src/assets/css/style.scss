@@ -158,12 +158,6 @@ header {
       }
     }
 
-    .activenoti {
-      transform: scaleY(1);
-      opacity: 1;
-      visibility: visible;
-    }
-
     .notiheading h5 {
       font-size: 1.3rem;
       font-weight: 600;
@@ -286,12 +280,6 @@ header {
           opacity: 0.6;
         }
       }
-    }
-
-    .activeProfiledrop {
-      transform: scaleY(1);
-      opacity: 1;
-      visibility: visible;
     }
 
     img {
@@ -605,12 +593,6 @@ main {
         top: 1.4rem;
       }
     }
-
-    .activeDrop {
-      transform: scaleY(1);
-      opacity: 1;
-      visibility: visible;
-    }
   }
 
   .fileCnt {
@@ -858,12 +840,6 @@ main {
       }
     }
   }
-
-  .activeFileDrop {
-    transform: scaleY(1);
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 .uploadBlock {
@@ -1020,6 +996,12 @@ main {
 
 .chartState {
   margin-top: 5rem;
+}
+
+.show {
+  transform: scaleY(1) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 // -- mainLeft area end --
